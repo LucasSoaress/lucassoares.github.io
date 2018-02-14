@@ -1,491 +1,952 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="image/png" href="images/Logo.png" />
-	<title>Lucas Soares</title>	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Site para portfólio de Lucas Soares" />
-	<meta name="keywords" content="programador, desenvolvedor, developer, fullstack, jogos, aplicativos, apps" />
-	<meta name="author" content="Lucas Soares" />
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="pt-br"> <!--<![endif]-->
+<head>
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Lucas Soares</title>
+	<meta name="description" content="Site de Lucas Soares">
+	<meta name="author" content="Lucas Soares">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-	
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Cookie -->
-	<script src="js/jquery.cookie.js"></script>
-	<script>
-	if ( $.cookie('styleCookie') === 'style-light.css') {
-		$('html, body').css('background', '#eeeeee');
-	} else if ($.cookie('styleCookie') === 'style.css') {
-		$('html, body').css('background', '#222222');
-	}
-	
-	</script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-	<!-- Viewport Units Buggyfill -->
-	<script src="js/viewport-units-buggyfill.js"></script>
+   <!-- Favicons
+	================================================== -->
+	<!-- <link rel="shortcut icon" href="favicon.png" > -->
 
-	<!-- Googgle Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 
-	<!-- Main JS  -->
-	<script src="js/main.js"></script>
+</head>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+<body>
 
-	</head>
-	<body>
-	
-	<!-- Loader -->
-	<div class="fh5co-loader"></div>
-	
-	<div id="fh5co-page">
-		<nav id="fh5co-nav" role="navigation">
-			<ul>
-				<li class="animate-box fh5co-active"><a href="index.html" class="transition">Início</a></li>
-				<li class="animate-box"><a href="sobre.html" class="transition">Sobre</a></li>
-			</ul>
-			<a class="style-toggle js-style-toggle" data-style="default" href="#">
-				<span class="fh5co-circle"></span>
-			</a>
-		</nav>
-		
-		<header id="fh5co-header" role="banner" class="fh5co-project js-fh5co-waypoint no-border" data-colorbg="#222222" data-next="yes">
-			<div class="container">
-				<div class="fh5co-text-wrap animate-box">
-					<div class="fh5co-intro-text">
-						<h1>Olá, eu sou <br> <strong>Lucas Soares</strong> </h1>
-					</div>
-				</div>
-			</div>
-			<div class="btn-next animate-box fh5co-learn-more">
-				<a href="#" class="scroll-btn">
-					<span>Veja os meus projetos</span>
-					<i class="icon-chevron-down"></i>
-				</a>
-			</div>
-		</header>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-		<div class="fh5co-project js-fh5co-waypoint" data-bgcolor="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/Prinxel/00.png" alt="Prinxel Game">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Prinxel</h2>
-						<p>
-							Jogo educacional, com objetivo de ensinar funções do primeiro grau, da disciplina matemática.
-						</p>
-                        <p><a href="prinxel.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <nav id="nav-wrap">
 
-		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/Math/00.png" alt="Math Lost game">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Math Lost</h2>
-						<p>
-							Jogo educacional, onde buscamos desenvolver no jogador a sua percepção espacial.
-						</p>
-						<p><a href="mathlost.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/White/00.png" alt="White Cube game">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>White Cube</h2>
-						<p>
-							White Cube, um jogo para Android, onde seu objetivo é passar por todas as fases sem bater nos objetos coloridos.
-						</p>
-						<p><a href="whitecube.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/omega/1.png" alt="Omega game">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>OMEGA GAME</h2>
-						<p>
-							Omega é um jogo inspirado na série de jogos Gradius. De certa forma, um tributo à um jogo que fez parte da infância de alguns de nós.
-						</p>
-						<p><a href="omega.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/sbgames/1.png" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>The Indie Game</h2>
-						<p>
-							CardGame metalinguístico, que aborda de maneira dinâmica e divertida o mercado de jogos independentes e seu processo de criação.
-						</p>
-						<p><a href="theindiegame.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/Arduino/genius_1.jpeg" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Projetos com Arduino</h2>
-						<p>
-							Projetos, jogos e palestras com Arduino. Desenvolvidor por mim e o grupo de robótica, NAVE Labs.
-						</p>
-						<p><a href="robotica.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/Qui/1.png" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Qui Diversão</h2>
-						<p>
-							Card Game desenvolvido focado em ensinar química para alunos do segundo ano do ensino médio
-						</p>
-						<p><a href="quidiversao.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/calc/cal.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Calculadora de Matrizes</h2>
-						<p>
-							Uma calculadora de matrizes desenvolvida em uma integração (Matemática e Programação), focada em ajudar alunos e professores.
-						</p>
-						<p><a href="calculadora.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-			</div>
-		</div>
-		
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/sbgames/2.png" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Indie Studio App</h2>
-						<p>
-							Aplicativo desenvolvido para ajudar no gameplay do card game The Indie Game. Contendo também uma mostra em Realidade Aumentada dos personagens do card game.
-						</p>
-						<p><a href="theindiegamesapp.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/sbgames/2.png" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Group List</h2>
-						<p>
-							Um aplicativo que permite você organizar as tarefas do seu grupo
-						</p>
-						<p><a href="grouplist.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/code/memory.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>The Code Game</h2>
-						<p>
-							Game desenvolvido na disciplina de programação, cujo objetivo é mostrar diversas linguagens de programação para as pessoas.
-						</p>
-						<p><a href="thecodegame.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">Sobre</a></li>
+	         <li><a class="smoothscroll" href="#resume">Currículo</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projetos</a></li>
+            <li><a class="smoothscroll" href="#contact">Contato</a></li>
+         </ul> <!-- end #nav -->
 
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/otherImages/navelabs.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>NAVE LABS Site</h2>
-						<p>
-							Site para o grupo de pesquisa e disseminação de robótiva, NAVE LABS.
-						</p>
-						<p><a href="https://navelabs.github.io/" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+      </nav> <!-- end #nav-wrap -->
 
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/otherImages/siteindiestudio.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Indie Studio Site</h2>
-						<p>
-							Site para o game Indie Studio
-						</p>
-						<p><a href="WhiteCube.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Lucas Soares</h1>
+            <h3>Formado em<span> programação de jogos digitais pelo NAVE Rio</span>, membro do grupo de pesquisa e disseminação de robótica <span>NAVE Labs.</span> <br> Desenvolvedor full stack <!-- Deslize<a class="smoothscroll" href="#about"> </a>
+            e saiba mais <a class="smoothscroll" href="#about">sobre mim</a>. --></h3>
+            <hr />
+            <ul class="social">
+               <li><a target="_blank" href="https://www.facebook.com/soare.lucas"><i class="fa fa-facebook"></i></a></li>
+               <li><a target="_blank" href="https://www.linkedin.com/in/devlucassoares/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="_blank" href="https://www.instagram.com/lucaass_sooares/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="_blank" href="https://github.com/lucassoares"><i class="fa fa-github"></i></a></li>
+               <li><a target="_blank" href="https://telegram.me/lucassoaress"><i class="fa fa-telegram"></i></a></li>
+            </ul>
+         </div>
+      </div>
 
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/jamil/jamil.png" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Jamil pelo Brasil</h2>
-						<p>
-							Game desenvolvido para mostrar a diferença cultural entre estados do Brasil
-						</p>
-						<p><a href="jamilpelobrasil.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/otherImages/forum.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Fórum Web</h2>
-						<p>
-							Fórum desenvolvido para ser utilizado por programadores.
-						</p>
-						<p><a href="#" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
+   </header> <!-- Header End -->
 
-		<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/NAVE_sistema/main.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Sistema NAVE</h2>
-						<p>
-							Sistema desenvolvido para auxiliar o gerenciamento do horário de todas as turmas do NAVE, possibilitando todos terem o horário online e com fácil acesso.
-						</p>
-						<p><a href="https://lucassoares.github.io/NAVE-HORARIO" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/otherImages/geradorAnagramas.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Gerador de Anagramas</h2>
-						<p>
-							Sistema criada para gerar anagramas. Projeto desenvolvido a partir da matéria de permutações em matemática
-						</p>
-						<p><a href="anagramasgenerator.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-			<div class="fh5co-project js-fh5co-waypoint fh5co-reverse" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 col-md-push-4 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/otherImages/anagramasgame.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 col-md-pull-8 animate-box">
-						<h2>Anagramas Game</h2>
-						<p>
-							Game criado a partir de anagramas, onde você terá que descobrir as palavras corretas para cada anagrama.
-						</p>
-						<p><a href="anagramasgame.html" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="row">
 
-		<div class="fh5co-project js-fh5co-waypoint" data-colorbg="" data-next="yes">
-			<div class="container">
-				<div class="fh5co-project-inner row">
-					<div class="fh5co-imgs col-md-8 animate-box">
-						<div class="img-holder-1 animate-box">
-							<img src="images/NAVE+.PNG" alt="Free HTML5 Bootstrap Template">
-						</div>
-					</div>
-					<div class="fh5co-text col-md-4 animate-box">
-						<h2>Site evento NAVE+</h2>
-						<p>
-							Site/ landing page para divulgação do evento NAVE+.
-						</p>
-						<p><a href="https://navemais.github.io" class="btn btn-light btn-outline transition">Veja Mais</a></p>
-					</div>
-				</div>
-			</div>
+         <div class="three columns">
 
-		<footer id="fh5co-footer" class="js-fh5co-waypoint">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<p><small>&copy; <a href="index.html" >Lucas Soares. </a> </a> Todos os direitos reservados. <br> Model created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a></small> </p>
-						<ul class="fh5co-social">
-							<li>
-								<a href="https://www.facebook.com/soare.lucas?ref=bookmarks"><i class="icon-facebook"></i></a>
-							</li>
-							<li>
-								<a href="https://github.com/lucassoares"><i class="icon-github"></i></a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/devlucassoares"><i class="icon-linkedin"></i></a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/lucaass_sooares/"><i class="icon-instagram"></i></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	</body>
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>Sobre mim</h2>
+
+            <p>Formado em programação no NAVE, membro do grupo de pesquisa e disseminação de robótica – NAVE Labs, amante de programação e robótica, atuante no desenvolvimento de projetos com Arduino, softwares, jogos 2D, 3D, aplicativos, sites e sistemas web. Amante da área de hacking e segurança digital. Voluntário na organzação de eventos sobre tecnologia no Rio de Janeiro, assim como mentor em cursos gratuitos oferecidos pelas comunidades de desenvolvimento. Palestrante sobre diversas áreas de tecnologia.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Detalhes de contato</h2>
+                  <p class="address">
+						   <span>Lucas Soares</span><br>
+						   <span>Rio de Janeiro - RJ
+                     </span><br>
+                     devlucassoares@gmail.com <br>
+                     <span>lucassoares.tk</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a target="_blank" href="curriculo.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Educação</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>NAVE Rio - Núcleo Avançado em Educação</h3>
+                  <h5>Colégio Estadual José Leite Lopes</h5>
+                  <p class="info">Programação de jogos digitais <span>&bull;</span> <em class="date">Dezembro 2017</em></p>
+
+                  <p>
+                  Ensino médio integrado com curso profissionalizante de programação de jogos digitais. Com disciplinas de desenvolvimento de jogos, desenvolvimento mobile, ensino de metodologias ágeis. Na disciplina de oficina integrada os alunos tem como objetivo desenvolver um projeto unindo os dois cursos técnicos do NAVE programação e multimídia. 
+                  <br>
+                  <a target="_blank" href="http://www.oifuturo.org.br/educacao/nave/">Saiba mais</a> 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+           <!--  <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>School of Cool Designers</h3>
+                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
+
+                  <p>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                  </p>
+
+               </div>
+
+            </div>  item end -->
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Experiência</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>NAVE Labs - Pesquisa e disseminação de robótica</h3>
+                  <p class="info">Pesquisador e desenvolvedor <span>&bull;</span> <em class="date">Junho 2017 - o momento</em></p>
+
+                  <p>
+                  O NAVE Labs se propõe a ser um núcleo de pesquisa e inovação, com base na criação de um ambiente de aprendizado colaborativo. Faz parte do programa de Educação NAVE do Instituto Oi Futuro, que acontece no Colégio Estadual José Leite Lopes, onde ocorrem implementações de práticas e desenvolvimento de novas ferramentas com o objetivo principal de fomentar no corpo discente autonomia, empreendedorismo, proatividade e interesse pela pesquisa. A fim de atingir seu objetivo principal, o projeto procura se articular com outros grupos de pesquisa dentro e fora do programa NAVE.
+                  <br>
+                  <a target="_blank" href="https://navelabs.github.io">Saiba mais</a> 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>BIT - Brincando com Inovação e Tecnologia</h3>
+                  <p class="info">Pesquisador e desenvolvedor <span>&bull;</span> <em class="date">Outubro de 2017 - o momento</em></p>
+
+                  <p>
+                  Cultura maker, educação, inovação, autoralidade, descoberta e empoderamento. O Reserva Mini BIT é um maker lab para potencialização do conhecimento através da tecnologia.
+                  <br>
+                  <a target="_blank" href="https://www.minibit.com.br">Saiba mais</a> 
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>Aqui você pode encontrar um pouco mais das minhas habilidades, tanto em programação quanto em design.
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
+						<li><span class="bar-expand javascript"></span><em>Javascript</em></li>
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+                  <li><span class="bar-expand php"></span><em>PHP</em></li>
+                  <li><span class="bar-expand unity"></span><em>Unity</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Confira os meus projetos recentes</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/arduinoday.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Arduino Day 2017</h5>
+                              <p>Evento, Organização</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/whitecube.png
+                        ">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>White Cube</h5>
+                              <p>Android Game</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/modals/startuprace.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Hackpuc Startup Race</h5>
+                              <p>Desenvolvimento de startup</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/devfest.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>DEV FEST 2017</h5>
+                              <p>Evento de tecnologia</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/modals/roadsec.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Roadsec</h5>
+                              <p>Apoio de comunidade, oficina</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/modals/riodevday.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Rio DevDay 2016</h5>
+                              <p>Evento de tecnologia</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/modals/sbgames.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>SBGames 2017</h5>
+                              <p>Evento de games</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/modals/bigfestival.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Big Festival 2017</h5>
+                              <p>Evento de games</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-09" title="">
+                        <img alt="" src="images/portfolio/sbgames2016.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>SBGames 2016</h5>
+                              <p>Evento de games</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-10" title="">
+                        <img alt="" src="images/portfolio/mathlost.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Math Lost</h5>
+                              <p>Game educacional</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-11" title="">
+                        <img alt="" src="images/portfolio/scratchday_logo.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Scratch Day</h5>
+                              <p>Eveto de tecnologia</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-12" title="">
+                        <img alt="" src="images/portfolio/modals/horarionavethumb.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>NAVE Horários</h5>
+                              <p>Sistema web</p>
+                           </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+               </div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-arduinoday.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Arduino Day 2017</h4>
+			      <p>Organizador de um dos polos oficiais do Arduino Day 2017, um evento com diversas palestras, oficinas e uma feira de exposição.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Organização</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.opovo.com.br/noticias/colunas/tecnosfera/2017/04/educacao-e-tecnologia-a-experiencia-do-nave.html">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-whitecube.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>White Cube</h4>
+			      <p>Um jogo para Android, onde seu objetivo é passar por todas as fases sem bater nos objetos coloridos. Com ranking global, e modos normal e infinito, o game é um verdadeiro desafio para os jogadores.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Android, Game, Playstore</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://play.google.com/store/apps/details?id=com.NAVE.Cube&hl=pt_BR">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-hackpuc.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Startup Race HackPuc</h4>
+			      <p>Duranto o Hackpuc 2017, uma das atividades, o StartupRace tinha como objetivo desenvolver ideias para startups durante um final de semana. Após isso apresentar para uma banca de jurados para eles escolherem as três melhores startups. Com a idea de uma metodologia para controle de desempenho de funcionários de empresas, utilizando uma ferramenta gamificada de gerenciamento de tarefas. Consegui o 2º lugar da StartuRace. Com uma equipe de 4 pessoas, onde todos se conheceram durante o evento.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Competição, Startup</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://www.hackpuc.com/startup-race">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/devfestfoto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>DevFest 2017</h4>
+			      <p>O maior evento de tecnologia do Google no Rio de Janeiro, feito com carinho pela comunidade do GDG Rio. Ajudei na organização deste maravilhoso evento, junto com a comunidade GDG Rio.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Organização</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://gdgrio.github.io/devfest/">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/roadssecfoto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Roadsec</h4>
+			      <p>Durante a edição no Rio de Janeiro, participei ministrando uma oficina de arduino para os participantes,com o grupo NAVE Labs, além de ser voluntário durante o evento como Roadie.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Oficina</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://roadsec.com.br/riodejaneiro2017/">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/riodevdayfoto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Rio DevDay 2016</h4>
+			      <p>Durante o Rio Dev Day 2016, palestrei sobre Robótica no cinema, além de apresentar o projeto desenvolvido utilizando arduino simulando um estabilizador para gravação de timelapses.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Palestra, Evento</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="https://riodevday.github.io/">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/sbgames2017foto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>SBGames 2017</h4>
+			      <p>Durante o SBGames 2017, realido na PUC de Curitiba. Atuei como organizador da trilha Kids and Teens, ministrei oficinas e palestras sobre tecnologia e robótica. Além de organizar um Escape 60 para o evento. </p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Palestra, Oficina, Organização</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.sbgames.org/sbgames2017/">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/bigfestivalfoto.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Big Festival 2017</h4>
+			      <p>
+                  Na edição de 2017 do Big Festival, realizado no Centro Cultura de São Paulo. Ministrei oficinas e palestras sobre robótica e tecnologia.      
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Palestra, Oficina</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="http://www.bigfestival.com.br/">Detalhes</a>
+		         <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+	      </div><!-- modal-08 End -->
+
+         <div id="modal-09" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/sbgames2016foto.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>SBGames 2016</h4>
+               <p>Para edição 2016 da SBGames, realizada na USP. Atuei como organizador da trilha Kids and Teens e no desenvolvimento de um <a href="https://gameindiestudio.github.io/">card game</a> para ser distribuido como brindo durante o evento. Além de ministrar palestras sobre desenvolvimento e games.
+               Após o evento, desenvolvi um app para auxiliar no gameplay do card game.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Palestra, Game, Organização</span>
+            </div>
+
+            <div class="link-box">
+               <a href="http://www.sbgames.org/sbgames2016/">Detalhes</a>
+               <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+         </div><!-- modal-09 End -->
+
+         <div id="modal-10" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/mathlostfull.png" alt="" />
+
+            <div class="description-box">
+               <h4>Math Lost</h4>
+               <p>Jogo educacional, onde buscamos desenvolver no jogador a sua percepção espacial. Desenvolvido numa integração entre a disciplina de matemática e programação de jogos do NAVE, utilizando Unity Engine.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Game, Educação</span>
+            </div>
+
+            <div class="link-box">
+               <a href="https://www.facebook.com/GameMathLost/">Detalhes</a>
+               <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+         </div><!-- modal-10 End -->
+
+         <div id="modal-11" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/scratchdayfoto.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>Scratch Day 2017</h4>
+               <p>Durante o Scratch Day 2017, ministrei uma palestra sobre Robótica na educação e participei da feira maker, com exposição de projetos feitos com arduino com o grupo NAVE Labs.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Evento, Palestra, Exposição</span>
+            </div>
+
+            <div class="link-box">
+               <a href="https://day.scratch.mit.edu/events/3660/">Detalhes</a>
+               <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+         </div><!-- modal-11 End -->
+
+         <div id="modal-12" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/horarionave.PNG" alt="" />
+
+            <div class="description-box">
+               <h4>Horário NAVE</h4>
+               <p>Sistema desenvolvido para auxiliar todos do NAVE com a organização dos horários. Projeto disponível no github para sugestões.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Sistema Web</span>
+            </div>
+
+            <div class="link-box">
+               <a href="https://lucassoares.github.io/NAVE-HORARIO/">Acessar</a>
+               <a class="popup-modal-dismiss">Fechar</a>
+            </div>
+
+         </div><!-- modal-12 End -->
+      
+         <h1>Confira mais projetos no meu Linkedin e no meu currículo.</h1>
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+  <!--  <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get Hosting.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
+            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
+					Simply type	the promocode in the box labeled “Promo Code” when placing your order. </p> 
+
+         </div>
+
+         <div class="three columns action">
+
+            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
+
+         </div>
+
+      </div>
+
+   </section>  Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== 
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li>  slide ends 
+
+                     <li>
+                        <blockquote>
+                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                           </p>
+                           <cite>Mr. Adobe</cite>
+                        </blockquote>
+                     </li>  slide ends 
+
+                  </ul>
+
+               </div> div.flexslider ends 
+
+            </div>  div.flex-container ends 
+
+         </div>  row ends 
+
+       </div>   text-container ends 
+
+   </section>  Testimonials Section End
+ -->
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Entre em contato</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                     Se quiser saber mais sobre mim, ou compartilhar conhecimento sobre tecnologia. Entre em contato comigo. Será um prazer ajudar.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <!-- <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> --> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <!-- <div id="message-warning"> Error boy</div> -->
+               <!-- contact-success -->
+				  <!--  <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div> -->
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Contatos</h4>
+					   <p class="address">
+						   Lucas Soares<br>
+						   Rio de Janeiro - RJ<br>
+                     <a href="mailto:devlucassoares@gmail.com">devlucassoares@gmail.com</a> <br>
+                     <a href="http://lucassoares.tk">lucassoares.tk</a> <br>
+					   </p>
+
+				   </div>
+
+               <!-- <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div>
+ -->
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a target="_blank" href="https://www.facebook.com/soare.lucas"><i class="fa fa-facebook"></i></a></li>
+               <li><a target="_blank" href="https://www.linkedin.com/in/devlucassoares/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="_blank" href="https://www.instagram.com/lucaass_sooares/"><i class="fa fa-instagram"></i></a></li>
+               <li><a target="_blank" href="https://github.com/lucassoares"><i class="fa fa-github"></i></a></li>
+               <li><a target="_blank" href="https://telegram.me/lucassoaress"><i class="fa fa-telegram"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2018 <a href="http://lucassoares.tk">Lucas Soares</a></li>
+               <li>Design by <a target="_blank" title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
 </html>
-
