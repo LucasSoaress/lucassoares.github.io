@@ -400,7 +400,6 @@ ul#nav li.current a { color: #1353FF; }
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
   100% { width: 90%;  }
@@ -425,12 +424,10 @@ ul#nav li.current a { color: #1353FF; }
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-
 @-webkit-keyframes php {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-
 @-webkit-keyframes unity {
   0%   { width: 0px;  }
   100% { width: 60%;  }
